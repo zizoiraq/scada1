@@ -44,7 +44,7 @@ else:
 # Run a scan cycle
 if st.button("Run Scan Cycle"):
     tank.update()
-    st.experimental_rerun()
+st.rerun()
 
 # Display water level
 st.markdown(f"### Current Water Level: {tank.water_level:.0f}%")
